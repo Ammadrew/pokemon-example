@@ -1,3 +1,127 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.text-lg {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+}
+#pokemon-list {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  padding: 1em 0;
+  margin: 0px 128px;
+
+  .card {
+    border: 1px solid lightgray;
+    padding: 1rem;
+    border-radius: 5px;
+
+    .number {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: grey;
+      font-size: 80%;
+    }
+    .name {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+    }
+    .poison {
+      background-color: purple;
+      color: white;
+    }
+    .fire {
+      background-color: red;
+      color: white;
+    }
+    .grass {
+      background-color: green;
+      color: white;
+    }
+    .flying {
+      background-color: darkgray;
+      color: white;
+    }
+    .water {
+      background-color: blue;
+      color: white;
+    }
+    .bug {
+      background-color: darkolivegreen;
+      color: white;
+    }
+    .normal {
+      background-color: rosybrown;
+      color: white;
+    }
+    .electric {
+      background-color: gold;
+      color: white;
+    }
+    .psychic {
+      background-color: hotpink;
+      color: white;
+    }
+    .ice {
+      background-color: lightskyblue;
+      color: white;
+    }
+    .steel {
+      background-color: lightsteelblue;
+      color: white;
+    }
+    .ground {
+      background-color: peru;
+      color: white;
+    }
+    .fairy {
+      background-color: violet;
+      color: white;
+    }
+    .fighting {
+      background-color: coral;
+      color: white;
+    }
+    .dark {
+      background-color: darkslategray;
+      color: white;
+    }
+    .rock{
+      background-color: saddlebrown;
+      color: white;
+    }
+    .ghost {
+      background-color: slateblue;
+      color: white;
+    }
+    .dragon {
+      background-color: teal;
+      color: white;
+    }
+    .group-type {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .type {
+      width: 80px;
+      border-radius: 5px;
+    }
+  }
+  .thumbnail-bg {
+    background-color: lightgray;
+    border-radius: 5px;
+    width: 100%;
+
+    .image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
