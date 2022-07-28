@@ -12,6 +12,23 @@
   <body>
     <main class="p-4">
       <h1 class="text-lg">Pokemon list</h1>
+      <div id="new-pokemon-form">
+        <div class="field mb-4">
+          <label for="name">Name</label>
+          <input type="text" id="name" class="bg-yellow-100 p-2" />
+        </div>
+        <div class="field mb-4">
+          <label for="type">Type</label>
+          <select name="type" id="type" class="bg-yellow-100 p-2">
+            <option value="fire">fire</option>
+            <option value="water">water</option>
+            <option value="posion">poison</option>
+            <option value="rock">rock</option>
+          </select>
+        </div>
+        <button id="btn-create" class="bg-green-700 text-white px-6">Create New Pokemon</button>
+      </div>
+
       <div id="pokemon-list"></div>
     </main>
     <script type="module" src="/main.js"></script>
