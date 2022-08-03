@@ -65,7 +65,7 @@ function assignDeleteCard(card) {
       btnDelete.addEventListener('click', (e) => {
         let targetId = e.target.dataset.id;
         let deleteUrl = pokemonListUrl + '/' + targetId;
-        if(confirm("Are you sure")) {
+        if(confirm("Are you sure ?")) {
         fetch(deleteUrl, {
           method: "DELETE",
           headers: {
